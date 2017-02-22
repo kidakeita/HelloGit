@@ -28,6 +28,7 @@ bool BackGroundLayer::init()
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
+	// 背景描画
 	m_background = Sprite::create("frame.png");
 	m_background->setPosition(visibleSize.width / 2, visibleSize.height / 2);
 	this->addChild(m_background,1);
